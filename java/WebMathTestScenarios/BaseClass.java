@@ -19,6 +19,9 @@ public class BaseClass {
 	public Properties homepageprop;
 	public Properties headerprop;
 	public Properties footerprop;
+	public Properties mathforeveryoneprop;
+	public Properties quickjumpprop;
+	public Properties mathfunctionsprop;
 	
 	@BeforeClass
 	public void userData() throws IOException {
@@ -33,6 +36,18 @@ public class BaseClass {
 		FileInputStream footerfile = new FileInputStream("./src/test/java/PropertiesFiles/footer.properties");
 		footerprop = new Properties();
 		footerprop.load(footerfile);
+		
+		FileInputStream mathforeveryonefile = new FileInputStream("./src/test/java/PropertiesFiles/mathforeveryone.properties");
+		mathforeveryoneprop = new Properties();
+		mathforeveryoneprop.load(mathforeveryonefile);
+		
+		FileInputStream quickjumpfile = new FileInputStream("./src/test/java/PropertiesFiles/quickjump.properties");
+		quickjumpprop = new Properties();
+		quickjumpprop.load(quickjumpfile);
+		
+		FileInputStream mathfunctionsfile = new FileInputStream("./src/test/java/PropertiesFiles/mathfunctions.properties");
+		mathfunctionsprop = new Properties();
+		mathfunctionsprop.load(mathfunctionsfile);
 	}
 	
 	@BeforeMethod

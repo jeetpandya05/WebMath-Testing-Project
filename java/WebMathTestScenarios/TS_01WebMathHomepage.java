@@ -1,12 +1,12 @@
 package WebMathTestScenarios;
 
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class TS_01WebMathHomepage extends BaseClass {
 	
-	
+
 	@Test
 	public void verifyTitle() {
 		String actTitle = driver.getTitle();
@@ -14,12 +14,12 @@ public class TS_01WebMathHomepage extends BaseClass {
 		
 		Assert.assertEquals(actTitle, expTitle);
 	}
-	
+
 	@Test
 	public void verifyLogo() {
 		driver.findElement(By.xpath(homepageprop.getProperty("logo"))).isDisplayed();
 	}
-	
+
 	@Test
 	public void logoOpensHomepage() {
 		driver.findElement(By.xpath(homepageprop.getProperty("logo"))).click();

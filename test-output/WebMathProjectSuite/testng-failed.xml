@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Failed suite [WebMathProjectSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="WebMathProjectTest(failed)">
+    <classes>
+      <class name="WebMathTestScenarios.TS_06MathFunctionsWorkingValidation">
+        <methods>
+          <include name="initialization"/>
+          <include name="NumbersMultiplyPage"/>
+          <include name="ConvertTempPage"/>
+          <include name="ConversionArea"/>
+          <include name="NumbersAdditionPage"/>
+          <include name="userData"/>
+          <include name="QuickJumpDropdown"/>
+          <include name="NumbersMultiply"/>
+          <include name="CoinsCounting"/>
+          <include name="ConversionAreaPage"/>
+          <include name="CoinsCountingPage"/>
+          <include name="ConvertTemp"/>
+          <include name="NumbersAddition"/>
+          <include name="exit"/>
+        </methods>
+      </class> <!-- WebMathTestScenarios.TS_06MathFunctionsWorkingValidation -->
+      <class name="WebMathTestScenarios.TS_05QuickJumpToMathSelection">
+        <methods>
+          <include name="userData"/>
+          <include name="QuickJumpDropdown"/>
+          <include name="initialization"/>
+          <include name="CoinsCountingPage"/>
+          <include name="NumbersMultiplyPage"/>
+          <include name="ConversionAreaPage"/>
+          <include name="ConvertTempPage"/>
+          <include name="exit"/>
+          <include name="NumbersAdditionPage"/>
+        </methods>
+      </class> <!-- WebMathTestScenarios.TS_05QuickJumpToMathSelection -->
+      <class name="WebMathTestScenarios.TS_03WebMathFooterLinks">
+        <methods>
+          <include name="validateHomeFooterButton"/>
+          <include name="userData"/>
+          <include name="validateAboutWebmathButton"/>
+          <include name="validateWhyWebmathButton"/>
+          <include name="validateWebsiteMapButton"/>
+          <include name="validatePrivacyPolicyButton"/>
+          <include name="initialization"/>
+          <include name="validateContactUsButton"/>
+          <include name="exit"/>
+        </methods>
+      </class> <!-- WebMathTestScenarios.TS_03WebMathFooterLinks -->
+      <class name="WebMathTestScenarios.TS_01WebMathHomepage">
+        <methods>
+          <include name="userData"/>
+          <include name="logoOpensHomepage"/>
+          <include name="initialization"/>
+          <include name="exit"/>
+        </methods>
+      </class> <!-- WebMathTestScenarios.TS_01WebMathHomepage -->
+      <class name="WebMathTestScenarios.TS_02WebMathHeaderLinks">
+        <methods>
+          <include name="validateAlgebraButton"/>
+          <include name="validateKindergartenbutton"/>
+          <include name="userData"/>
+          <include name="validateMathForEveryoneButton"/>
+          <include name="validateOtherStuffButton"/>
+          <include name="validateHomeHeaderButton"/>
+          <include name="validateTrignCalculusButton"/>
+          <include name="validateGeneralMathButton"/>
+          <include name="initialization"/>
+          <include name="validatePlotsnGeometryButton"/>
+          <include name="exit"/>
+        </methods>
+      </class> <!-- WebMathTestScenarios.TS_02WebMathHeaderLinks -->
+      <class name="WebMathTestScenarios.TS_04MathforEveryonePage">
+        <methods>
+          <include name="figuringTipPage"/>
+          <include name="MathforEveryone"/>
+          <include name="userData"/>
+          <include name="tipCalculator"/>
+          <include name="simpleInterest"/>
+          <include name="simpleInterestPage"/>
+          <include name="initialization"/>
+          <include name="exit"/>
+        </methods>
+      </class> <!-- WebMathTestScenarios.TS_04MathforEveryonePage -->
+    </classes>
+  </test> <!-- WebMathProjectTest(failed) -->
+</suite> <!-- Failed suite [WebMathProjectSuite] -->

@@ -1,11 +1,11 @@
 package WebMathTestScenarios;
 
-import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.Assert;
+import org.openqa.selenium.By;
 
 public class TS_03WebMathFooterLinks extends BaseClass {
-	
+
 	@Test
 	public void validateHomeFooterButton() {
 		driver.findElement(By.xpath(footerprop.getProperty("home"))).click();
@@ -14,7 +14,7 @@ public class TS_03WebMathFooterLinks extends BaseClass {
 			Assert.assertTrue(true);
 		}
 	}
-	
+
 	@Test
 	public void validateContactUsButton() {
 		driver.findElement(By.xpath(footerprop.getProperty("contactus"))).click();
@@ -23,7 +23,7 @@ public class TS_03WebMathFooterLinks extends BaseClass {
 			Assert.assertTrue(true);
 		}
 	}
-	
+
 	@Test
 	public void validateAboutWebmathButton() {
 		driver.findElement(By.xpath(footerprop.getProperty("aboutwebmath"))).click();
@@ -32,7 +32,7 @@ public class TS_03WebMathFooterLinks extends BaseClass {
 			Assert.assertTrue(true);
 		}
 	}
-	
+
 	@Test
 	public void validateWhyWebmathButton() {
 		driver.findElement(By.xpath(footerprop.getProperty("whywebmath"))).click();
@@ -41,7 +41,7 @@ public class TS_03WebMathFooterLinks extends BaseClass {
 			Assert.assertTrue(true);
 		}
 	}
-	
+
 	@Test
 	public void validateWebsiteMapButton() {
 		driver.findElement(By.xpath(footerprop.getProperty("websitemap"))).click();
@@ -50,7 +50,7 @@ public class TS_03WebMathFooterLinks extends BaseClass {
 			Assert.assertTrue(true);
 		}
 	}
-	
+
 	@Test
 	public void validatePrivacyPolicyButton() {
 		driver.findElement(By.xpath(footerprop.getProperty("privacypolicy"))).click();

@@ -1,8 +1,8 @@
 package WebMathTestScenarios;
 
+import org.testng.annotations.Test;
 import org.openqa.selenium.By;
 import org.testng.Assert;
-import org.testng.annotations.Test;
 
 public class TS_02WebMathHeaderLinks extends BaseClass {
 
@@ -23,7 +23,7 @@ public class TS_02WebMathHeaderLinks extends BaseClass {
 			Assert.assertTrue(true);
 		}
 	}
-	
+
 	@Test
 	public void validateGeneralMathButton() {
 		driver.findElement(By.xpath(headerprop.getProperty("generalmath"))).click();
@@ -32,7 +32,7 @@ public class TS_02WebMathHeaderLinks extends BaseClass {
 			Assert.assertTrue(true);
 		}
 	}
-	
+
 	@Test
 	public void validateKindergartenbutton() {
 		driver.findElement(By.xpath(headerprop.getProperty("kindergarten"))).click();
@@ -41,7 +41,7 @@ public class TS_02WebMathHeaderLinks extends BaseClass {
 			Assert.assertTrue(true);
 		}
 	}
-	
+
 	@Test
 	public void validateAlgebraButton() {
 		driver.findElement(By.xpath(headerprop.getProperty("algebra"))).click();
@@ -50,7 +50,7 @@ public class TS_02WebMathHeaderLinks extends BaseClass {
 			Assert.assertTrue(true);
 		}
 	}
-	
+
 	@Test
 	public void validatePlotsnGeometryButton() {
 		driver.findElement(By.xpath(headerprop.getProperty("plotsgeom"))).click();
@@ -59,7 +59,7 @@ public class TS_02WebMathHeaderLinks extends BaseClass {
 			Assert.assertTrue(true);
 		}
 	}
-	
+
 	@Test
 	public void validateTrignCalculusButton() {
 		driver.findElement(By.xpath(headerprop.getProperty("trigcalculus"))).click();
@@ -68,7 +68,7 @@ public class TS_02WebMathHeaderLinks extends BaseClass {
 			Assert.assertTrue(true);
 		}
 	}
-	
+
 	@Test
 	public void validateOtherStuffButton() {
 		driver.findElement(By.xpath(headerprop.getProperty("otherstuff"))).click();
